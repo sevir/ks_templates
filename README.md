@@ -12,3 +12,14 @@ cargo install kickstart
 1. dotdesktop
 
 Template for creating .desktop file
+
+For use it:
+```
+kickstart https://github.com/sevir/ks_templates -s dotdesktop
+```
+
+2. Rhai module extension
+
+```
+kickstart https://github.com/sevir/ks_templates -s rhai_module
+```
