@@ -1,0 +1,31 @@
+name = "DotDesktop"
+description = "Create a .desktop file"
+kickstart_version = 1
+ignore = [
+    "README.md"
+]
+
+[[variables]]
+name = "program_name"
+default = "Program Name"
+prompt = "What is the name of the program?"
+
+[[variables]]
+name = "comment"
+default = ""
+prompt = "Enter the description of the program"
+
+[[variables]]
+name = "exec_path"
+default = "/usr/bin/bash"
+prompt = "Please enter the full path or full command line"
+
+[[variables]]
+name = "terminal"
+default = false
+prompt = "Is a terminal program?"
+
+[[variables]]
+name = "icon_path"
+default = "/usr/icon.png"
+prompt = "Enter the full path of the icon"

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name={{program_name}}
+Exec={{exec_path}}
+Terminal={{terminal}}
+Type=Application
+Icon={{icon_path}}
+Comment={{comment}}
