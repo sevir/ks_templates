@@ -1,0 +1,10 @@
+[package]
+name = "rhai-{{module}}"
+version = "0.1.0"
+edition = "2021"
+authors = ["{{author}}"]
+description = "{{description}}"
+keywords = ["scripting", "scripting-language", "embedded", "rhai"]
+
+[dependencies]
+rhai = { version = "1.9.1" }
