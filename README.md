@@ -21,5 +21,11 @@ kickstart https://github.com/sevir/ks_templates -s dotdesktop
 2. Rhai module extension
 
 ```
-kickstart https://github.com/sevir/ks_templates -s rhai_module
+kickstart https://github.com/sevir/ks_templates -s rhai
+```
+
+3. Rust project
+
+```
+kickstart https://github.com/sevir/ks_templates -s rust_project
 ```

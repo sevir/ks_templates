@@ -1,0 +1,8 @@
+name = "Rust project"
+description = "A scaffold rust command line project"
+kickstart_version = 1
+
+[[variables]]
+name = "project_name"
+default = "some-project"
+prompt = "What is the name of this project?"
