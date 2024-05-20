@@ -1,0 +1,36 @@
+name: '{{name}}'
+
+proxy:
+  appserver:
+    - {{name | kebab_case}}.lndo.site
+
+services:
+  appserver:
+    type: php:8.2
+    via: apache
+    webroot: {{root_path}}
+    ssl: false
+    sslExpose: false
+    portforward: 8888
+    xdebug: false
+
+  database:
+    type: mariadb:11.3
+    portforward: 3306
+    creds:
+      user: {{db_user}}
+      password: {{db_password}}
+      database: {{name | snake_case}}
+      # Database name is the same as the project name lowercased and snake cased: mi_project_name
+tooling:
+  mysql:
+    service: database
+    command: mariadb -u root
+  mariadb:
+    service: database
+    command: mariadb -u root
+  db-export:
+    service: database
+    command: mysqldump -u root -p {{name | snake_case}}
+  db-import:
+    service: database -u root -p {{name | snake_case}}

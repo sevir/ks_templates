@@ -1,0 +1,23 @@
+name = "Lando Apache +PHP +MariaDB"
+description = "A scaffold for lamp web project"
+kickstart_version = 1
+
+[[variables]]
+name = "project_name"
+default = "some-project"
+prompt = "What is the name of this project?"
+
+[[variables]]
+name = "root_path"
+default = "./"
+prompt = "Root web path?"
+
+[[variables]]
+name = "db_user"
+default = "default_user"
+prompt = "Database user name? (default_user)"
+
+[[variables]]
+name = "db_password"
+default = "s3cr3t"
+prompt = "Database user password? (s3cr3t by default)"
