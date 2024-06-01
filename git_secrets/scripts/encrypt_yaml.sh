@@ -5,4 +5,4 @@ cd "${scriptDir}/.." || exit 1
 
 export SOPS_AGE_RECIPIENTS=$(cat keys/*.txt)
 exec 3<<< "$(cat $1)"
-sops --encrypt --input-type yaml --output-type yaml --encrypted-regex "^data$" --age ${SOPS_AGE_RECIPIENTS} /dev/fd/3
+sops --encrypt --input-type yaml --output-type yaml --encrypted-regex "^data$|^environment$" --age ${SOPS_AGE_RECIPIENTS} /dev/fd/3
