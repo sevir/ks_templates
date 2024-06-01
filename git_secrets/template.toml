@@ -1,0 +1,3 @@
+description = "Create neccesary files for storing secrets encrypted with SOPS and age"
+kickstart_version = 1
+name = "Git secrets"

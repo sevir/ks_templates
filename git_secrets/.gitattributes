@@ -1,0 +1,9 @@
+# Comment each line to disable the filter for the specific file type
+*.yaml filter=sops_yaml
+**/*.yaml filter=sops_yaml
+
+.env filter=sops_env
+*.env filter=sops_env
+
+*.json filter=sops_json
+**/*.json filter=sops_json
