@@ -22,6 +22,7 @@ Commit your public key in the repo and request for a partner to recrypt the secr
 ## Install the git filters
 
 ```bash
+chmod a+x ./scripts/*.sh
 ./scripts/install_git_filters.sh
 ```
 
