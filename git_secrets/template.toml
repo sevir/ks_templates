@@ -3,3 +3,6 @@ kickstart_version = 1
 name = "Git secrets"
 
 [[variables]]
+default = "yes"
+name = "var_name"
+prompt = "Do you want to keet your secrets hide from not allowed eyes?"
