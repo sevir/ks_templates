@@ -5,4 +5,4 @@ cd "${scriptDir}/.." || exit 1
 
 export SOPS_AGE_RECIPIENTS=$(cat keys/*.txt)
 exec 3<<< "$(cat $1)"
-sops --encrypt --input-type dotenv --output-type dotenv --encrypted-regex "^data$" --age ${SOPS_AGE_RECIPIENTS} /dev/fd/3
+sops --encrypt --input-type dotenv --output-type dotenv --age ${SOPS_AGE_RECIPIENTS} /dev/fd/3
