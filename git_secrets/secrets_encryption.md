@@ -19,6 +19,8 @@ The `keys.txt` file will contain the private key, and the public key, so keep it
 
 Commit your public key in the repo and request for a partner to recrypt the secrets files with your public key.
 
+Concat the new public key with comma separated in the file public_keys.txt
+
 ## Install the git filters
 
 ```bash
